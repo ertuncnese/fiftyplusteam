@@ -31,9 +31,9 @@ export default function BannerCarousel() {
             src={banners[index]}
             alt={`Banner ${index + 1}`}
             fill
-            className="object-cover w-full h-full"
+            className="object-contain w-full h-full bg-white"
             priority
-          />
+            />
         </motion.div>
       </AnimatePresence>
     </div>
