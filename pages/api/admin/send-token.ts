@@ -4,7 +4,7 @@ import { MongoClient } from 'mongodb';
 import clientPromise from '@/lib/mongodb';
 import nodemailer from 'nodemailer';
 
-const ADMIN_EMAILS = ['ertunc.nese@hotmail.com'];
+const ADMIN_EMAILS = ['ertunc.nese@hotmail.com','ayda@fiftyplusteam.com','oral@fiftyplusteam.com'];
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Only POST allowed' });
