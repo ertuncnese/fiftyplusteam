@@ -21,7 +21,7 @@ export default function BannerCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % banners.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -34,7 +34,7 @@ export default function BannerCarousel() {
           initial={{ opacity: 0, scale: isMobile ? 1 : 1 }}
           animate={{ opacity: 1, scale: isMobile ? 1.5 : 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          transition={{ duration: 3, ease: 'easeInOut' }}
         >
           <Image
             src={banners[index]}
