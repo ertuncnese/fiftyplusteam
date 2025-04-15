@@ -5,19 +5,19 @@ const offices = [
   {
     name: 'Bursa Ofisi',
     status: 'Aktif',
-    address: 'ÜÇEVLER MAHALLESİ 60.(220) SOKAĞI No : 1 A-OFİS/İŞYERİ A BLOK/3 NİLÜFER/ BURSA',
-    phone: '+90 532 414 2819',
+    address: 'Alaaddinbey, 16000 Nilüfer/Bursa',
+    phone: '+90 532 414 2819 / +90 533 533 7575',
     email: 'info@fiftyplusteam.com',
-    whatsapp: '+90 532 414 2819',
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24380.166376496676!2d28.907921187445336!3d40.197476748087105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca11e05bec159b%3A0x416a42640ff1b3a5!2sFiftyplus%20Team!5e0!3m2!1sen!2str!4v1744693330177!5m2!1sen!2str"
+    whatsapp: '+90 532 414 2819 / +90 533 533 7575',
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.020101415719!2d28.931025499999997!3d40.2086158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca11e05bec159b%3A0x416a42640ff1b3a5!2sFiftyplus%20Team!5e0!3m2!1sen!2str!4v1744728367228!5m2!1sen!2str"
   },
   {
     name: 'Kıbrıs Ofisi',
     status: 'Yakında Açılıyor',
     address: 'Girne / KKTC',
-    phone: '+90 532 414 2819',
+    phone: '+90 532 414 2819 / +90 533 533 7575',
     email: 'info@fiftyplusteam.com',
-    whatsapp: '+90 532 414 2819',
+    whatsapp: '+90 532 414 2819 / +90 533 533 7575',
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719873.6953135526!2d33.041114206122955!3d35.05761280388378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de0d14eb3ab9df%3A0xc5527a6b9bd7adfd!2zS8SxYnLEsXM!5e0!3m2!1sen!2str!4v1744693766391!5m2!1sen!2str"
   }
 ];

@@ -28,7 +28,7 @@ export default function Team() {
           image="/oral.jpg"
           linkedin="https://www.linkedin.com/in/oral-bilg%C3%BCtay-38998385/"
           email="oral@fiftyplusteam.com"
-          phone="0533 566 75 75"
+          phone="0533 533 75 75"
           about={[
             "Oral BİLGÜTAY, 1968 yılında Bursa’da doğmuştur. Uludağ Üniversitesi İktisadi ve İdari Bilimler Fakültesi mezunudur.",
             "Uzun yıllar turizm sektöründe edindiği deneyimin ardından, 2018 yılında gayrimenkul alanına geçiş yapmıştır.",
