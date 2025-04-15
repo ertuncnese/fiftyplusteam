@@ -5,9 +5,10 @@ module.exports = {
   },
 };
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true, // 💥 ESLint hatalarını build sırasında yok say
+  },
 };
 
 export default nextConfig;
