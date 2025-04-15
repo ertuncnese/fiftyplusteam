@@ -10,10 +10,12 @@ export default function BannerCarousel() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener('resize', check);
-    return () => window.removeEventListener('resize', check);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // sm breakpoint altı
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
@@ -29,9 +31,9 @@ export default function BannerCarousel() {
         <motion.div
           key={banners[index]}
           className="absolute inset-0"
-          initial={{ opacity: 0, scale: isMobile ? 0.55 : 1.05 }}
-          animate={{ opacity: 1, scale: isMobile ? 1.1 : 1 }}
-          exit={{ opacity: 0, scale: isMobile ? 1 : 1 }}
+          initial={{ opacity: 0, scale: isMobile ? 1 : 1 }}
+          animate={{ opacity: 1, scale: isMobile ? 1.5 : 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 3 }}
         >
           <Image
@@ -46,5 +48,6 @@ export default function BannerCarousel() {
     </div>
   );
 }
+
 
 
