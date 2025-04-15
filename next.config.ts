@@ -1,13 +1,19 @@
-import type { NextConfig } from "next";
-module.exports = {
-  images: {
-    domains: ['cdn.rss.app', 'instagram.fxyz1-1.fna.fbcdn.net'], // feed'teki image src domainlerini ekle
-  },
-};
+import type { NextConfig } from 'next';
 
-const nextConfig = {
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+
   eslint: {
-    ignoreDuringBuilds: true, // 💥 ESLint hatalarını build sırasında yok say
+    // 🚫 Build sırasında ESLint hatalarını göz ardı et
+    ignoreDuringBuilds: true,
+  },
+
+  images: {
+    domains: [
+      'cdn.rss.app',
+      'instagram.fxyz1-1.fna.fbcdn.net',
+      'scontent.cdninstagram.com'
+    ],
   },
 };
 
