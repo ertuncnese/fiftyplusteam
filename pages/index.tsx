@@ -20,7 +20,6 @@ export default function Home() {
       <About />
       <Team />
       <Services />
-      <News />
       <Offices />
       <News />
       <section id="iletisim" className="scroll-mt-24 px-6 py-20 bg-white text-gray-800">

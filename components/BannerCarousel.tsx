@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -16,7 +17,7 @@ export default function BannerCarousel() {
   }, []);
 
   return (
-    <div className="relative h-[480px] overflow-hidden">
+    <div className="relative w-full h-[480px] sm:h-[500px] md:h-[600px] overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.div
           key={banners[index]}
@@ -29,15 +30,13 @@ export default function BannerCarousel() {
           <Image
             src={banners[index]}
             alt={`Banner ${index + 1}`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover w-full h-full"
             priority
           />
         </motion.div>
       </AnimatePresence>
-
-      
-     
     </div>
   );
 }
+

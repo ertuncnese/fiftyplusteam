@@ -7,6 +7,10 @@ import { FaBars } from 'react-icons/fa';
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleNavClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -38,17 +42,18 @@ export default function Header() {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-white px-6 pb-4 space-y-3 text-blue-900 text-sm font-medium">
-          <Link href="/#hakkimizda" className="block hover:text-blue-700 transition">Hakkımızda</Link>
-          <Link href="/#ekibimiz" className="block hover:text-blue-700 transition">Ekibimiz</Link>
-          <Link href="/#hizmetler" className="block hover:text-blue-700 transition">Hizmetlerimiz</Link>
-          <Link href="/#ofislerimiz" className="block hover:text-blue-700 transition">Ofislerimiz</Link>
-          <Link href="/portfoyler" className="block hover:text-blue-700 transition">Portföyler</Link>
-          <Link href="/#haberler" className="block hover:text-blue-700 transition">Haberler</Link>
-          <Link href="/#iletisim" className="block hover:text-blue-700 transition">İletişim</Link>
+          <Link href="/#hakkimizda" onClick={handleNavClick} className="block hover:text-blue-700 transition">Hakkımızda</Link>
+          <Link href="/#ekibimiz" onClick={handleNavClick} className="block hover:text-blue-700 transition">Ekibimiz</Link>
+          <Link href="/#hizmetler" onClick={handleNavClick} className="block hover:text-blue-700 transition">Hizmetlerimiz</Link>
+          <Link href="/#ofislerimiz" onClick={handleNavClick} className="block hover:text-blue-700 transition">Ofislerimiz</Link>
+          <Link href="/portfoyler" onClick={handleNavClick} className="block hover:text-blue-700 transition">Portföyler</Link>
+          <Link href="/#haberler" onClick={handleNavClick} className="block hover:text-blue-700 transition">Haberler</Link>
+          <Link href="/#iletisim" onClick={handleNavClick} className="block hover:text-blue-700 transition">İletişim</Link>
         </nav>
       )}
     </header>
   );
 }
+
 
 
