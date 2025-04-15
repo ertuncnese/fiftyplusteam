@@ -29,10 +29,10 @@ export default function BannerCarousel() {
         <motion.div
           key={banners[index]}
           className="absolute inset-0"
-          initial={{ opacity: 0, scale: isMobile ? 0.95 : 1.05 }}
+          initial={{ opacity: 0, scale: isMobile ? 0.55 : 1.05 }}
           animate={{ opacity: 1, scale: isMobile ? 1.1 : 1 }}
           exit={{ opacity: 0, scale: isMobile ? 1 : 1 }}
-          transition={{ duration: 5 }}
+          transition={{ duration: 3 }}
         >
           <Image
             src={banners[index]}
