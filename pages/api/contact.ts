@@ -24,8 +24,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     await transporter.sendMail({
       from: `"Web Form" <${process.env.EMAIL_USER}>`,
-      //to: ['ayda@fiftyplusteam.com', 'oral@fiftyplusteam.com', 'ertunc.nese@hotmail.com'],
-      to: ['ertunc.nese@hotmail.com'],
+      to: ['ayda@fiftyplusteam.com', 'oral@fiftyplusteam.com', 'ertunc.nese@hotmail.com'],
+      //to: ['ertunc.nese@hotmail.com'],
       subject: `İletişim Formu: ${subject}`,
       text: `
 Gönderen: ${email}
